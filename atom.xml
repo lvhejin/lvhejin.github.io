@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>DK-Blog</title>
+  
+  <subtitle>子标题</subtitle>
+  <link href="http://www.lvhejin.cn/atom.xml" rel="self"/>
+  
+  <link href="http://www.lvhejin.cn/"/>
+  <updated>2024-01-05T17:32:17.643Z</updated>
+  <id>http://www.lvhejin.cn/</id>
+  
+  <author>
+    <name>金河</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>npm install时遇到错误&quot;error:0308010C:digital envelope routines::unsupported&quot;的解决办法</title>
+    <link href="http://www.lvhejin.cn/2024/01/06/NodeJS/NPM/npm%20install%E6%97%B6%E9%81%87%E5%88%B0%E9%94%99%E8%AF%AF0308010C%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/index.html"/>
+    <id>http://www.lvhejin.cn/2024/01/06/NodeJS/NPM/npm%20install%E6%97%B6%E9%81%87%E5%88%B0%E9%94%99%E8%AF%AF0308010C%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/index.html</id>
+    <published>2024-01-06T01:13:12.000Z</published>
+    <updated>2024-01-05T17:32:17.643Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;　　今天早上打开电脑，更新了日常工作的github仓库，然后就是习惯性地执行了”npm install”，发现报了下面这个错误：&lt;/p&gt;
+&lt;p&gt;Errornpm install时遇到错误”error:0308010C:digital envelope routines::u</summary>
+      
+    
+    
+    
+    <category term="NodeJS" scheme="http://www.lvhejin.cn/categories/NodeJS/"/>
+    
+    <category term="NPM" scheme="http://www.lvhejin.cn/categories/NodeJS/NPM/"/>
+    
+    
+    <category term="NodeJS" scheme="http://www.lvhejin.cn/tags/NodeJS/"/>
+    
+    <category term="NPM" scheme="http://www.lvhejin.cn/tags/NPM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《腾讯之道》-产、研、运</title>
+    <link href="http://www.lvhejin.cn/2023/12/22/%E4%BA%92%E8%81%94%E7%BD%91/%E7%AE%A1%E7%90%86/%E3%80%8A%E8%85%BE%E8%AE%AF%E4%B9%8B%E9%81%93%E3%80%8B-%E4%BA%A7%E3%80%81%E7%A0%94%E3%80%81%E8%BF%90/index.html"/>
+    <id>http://www.lvhejin.cn/2023/12/22/%E4%BA%92%E8%81%94%E7%BD%91/%E7%AE%A1%E7%90%86/%E3%80%8A%E8%85%BE%E8%AE%AF%E4%B9%8B%E9%81%93%E3%80%8B-%E4%BA%A7%E3%80%81%E7%A0%94%E3%80%81%E8%BF%90/index.html</id>
+    <published>2023-12-22T15:39:02.000Z</published>
+    <updated>2024-01-05T17:32:17.651Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/2023/12/22/%E4%BA%92%E8%81%94%E7%BD%91/%E7%AE%A1%E7%90%86/%E3%80%8A%E8%85%BE%E8%AE%AF%E4%B9%8B%E9%81%93%E3%80%8B-%E4%BA%A7%E3%</summary>
+      
+    
+    
+    
+    <category term="互联网" scheme="http://www.lvhejin.cn/categories/%E4%BA%92%E8%81%94%E7%BD%91/"/>
+    
+    <category term="管理" scheme="http://www.lvhejin.cn/categories/%E4%BA%92%E8%81%94%E7%BD%91/%E7%AE%A1%E7%90%86/"/>
+    
+    
+    <category term="管理" scheme="http://www.lvhejin.cn/tags/%E7%AE%A1%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>查看Windows系统中所有当前已占用的快捷键</title>
+    <link href="http://www.lvhejin.cn/2023/12/18/Windows/%E6%9F%A5%E7%9C%8BWindows%E7%B3%BB%E7%BB%9F%E4%B8%AD%E6%89%80%E6%9C%89%E5%BD%93%E5%89%8D%E5%B7%B2%E5%8D%A0%E7%94%A8%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE/index.html"/>
+    <id>http://www.lvhejin.cn/2023/12/18/Windows/%E6%9F%A5%E7%9C%8BWindows%E7%B3%BB%E7%BB%9F%E4%B8%AD%E6%89%80%E6%9C%89%E5%BD%93%E5%89%8D%E5%B7%B2%E5%8D%A0%E7%94%A8%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE/index.html</id>
+    <published>2023-12-18T12:09:45.000Z</published>
+    <updated>2024-01-05T17:32:17.651Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;Windows 系统作为商业闭源系统，其出厂自带了大量与 Windows 服务项捆绑的快捷键，但如你所见市面上大多数文章、视频都停留在告诉你</summary>
+      
+    
+    
+    
+    <category term="Windows" scheme="http://www.lvhejin.cn/categories/Windows/"/>
+    
+    
+    <category term="快捷键" scheme="http://www.lvhejin.cn/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    
+    <category term="Windows" scheme="http://www.lvhejin.cn/tags/Windows/"/>
+    
+    <category term="软件推荐" scheme="http://www.lvhejin.cn/tags/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GO语言图找图加鼠标双击</title>
+    <link href="http://www.lvhejin.cn/2023/12/05/Go/%E6%A1%8C%E9%9D%A2%E6%9C%BA%E5%99%A8%E4%BA%BA/GO%E8%AF%AD%E8%A8%80%E5%9B%BE%E6%89%BE%E5%9B%BE%E5%8A%A0%E9%BC%A0%E6%A0%87%E5%8F%8C%E5%87%BB/index.html"/>
+    <id>http://www.lvhejin.cn/2023/12/05/Go/%E6%A1%8C%E9%9D%A2%E6%9C%BA%E5%99%A8%E4%BA%BA/GO%E8%AF%AD%E8%A8%80%E5%9B%BE%E6%89%BE%E5%9B%BE%E5%8A%A0%E9%BC%A0%E6%A0%87%E5%8F%8C%E5%87%BB/index.html</id>
+    <published>2023-12-05T19:33:31.000Z</published>
+    <updated>2024-01-05T17:32:17.619Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;GO语言图找图，加鼠标双击&quot;&gt;&lt;a href=&quot;#GO语言图找图，加鼠标双击&quot; class=&quot;headerlink&quot; title=&quot;GO语言图找图，加鼠标双击&quot;&gt;&lt;/a&gt;GO语言图找图，加鼠标双击&lt;/h2&gt;&lt;figure class=&quot;highlight go&quot;&gt;</summary>
+      
+    
+    
+    
+    <category term="Go" scheme="http://www.lvhejin.cn/categories/Go/"/>
+    
+    <category term="桌面机器人" scheme="http://www.lvhejin.cn/categories/Go/%E6%A1%8C%E9%9D%A2%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
+    
+    
+    <category term="机器人" scheme="http://www.lvhejin.cn/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Go语言：屏幕操作（go-vgo/robotgo）</title>
+    <link href="http://www.lvhejin.cn/2023/12/05/Go/%E6%A1%8C%E9%9D%A2%E6%9C%BA%E5%99%A8%E4%BA%BA/Go%E8%AF%AD%E8%A8%80%E5%B1%8F%E5%B9%95%E6%93%8D%E4%BD%9C/index.html"/>
+    <id>http://www.lvhejin.cn/2023/12/05/Go/%E6%A1%8C%E9%9D%A2%E6%9C%BA%E5%99%A8%E4%BA%BA/Go%E8%AF%AD%E8%A8%80%E5%B1%8F%E5%B9%95%E6%93%8D%E4%BD%9C/index.html</id>
+    <published>2023-12-05T18:39:24.000Z</published>
+    <updated>2024-01-05T17:32:17.619Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;李大钊：我们要八小时工作！八小时睡觉！另外的八小时留给自己！&lt;/p&gt;
+&lt;h2 id=&quot;▌前置安装：&quot;&gt;&lt;a href=&quot;#▌前置安装：&quot; class=&quot;headerlink&quot; title=&quot;▌前置安装：&quot;&gt;&lt;/a&gt;▌前置安装：&lt;/h2&gt;&lt;figure class=&quot;high</summary>
+      
+    
+    
+    
+    <category term="Go" scheme="http://www.lvhejin.cn/categories/Go/"/>
+    
+    <category term="桌面机器人" scheme="http://www.lvhejin.cn/categories/Go/%E6%A1%8C%E9%9D%A2%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
+    
+    
+    <category term="机器人" scheme="http://www.lvhejin.cn/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Go语言：模拟按键操作（go-vgo/robotgo）</title>
+    <link href="http://www.lvhejin.cn/2023/12/05/Go/%E6%A1%8C%E9%9D%A2%E6%9C%BA%E5%99%A8%E4%BA%BA/Go%E8%AF%AD%E8%A8%80%E6%A8%A1%E6%8B%9F%E6%8C%89%E9%94%AE%E6%93%8D%E4%BD%9C/index.html"/>
+    <id>http://www.lvhejin.cn/2023/12/05/Go/%E6%A1%8C%E9%9D%A2%E6%9C%BA%E5%99%A8%E4%BA%BA/Go%E8%AF%AD%E8%A8%80%E6%A8%A1%E6%8B%9F%E6%8C%89%E9%94%AE%E6%93%8D%E4%BD%9C/index.html</id>
+    <published>2023-12-05T18:37:15.000Z</published>
+    <updated>2024-01-05T17:32:17.619Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;李大钊：我们要八小时工作！八小时睡觉！另外的八小时留给自己！&lt;/p&gt;
+&lt;h2 id=&quot;▌前置安装：&quot;&gt;&lt;a href=&quot;#▌前置安装：&quot; class=&quot;headerlink&quot; title=&quot;▌前置安装：&quot;&gt;&lt;/a&gt;▌前置安装：&lt;/h2&gt;&lt;figure class=&quot;high</summary>
+      
+    
+    
+    
+    <category term="Go" scheme="http://www.lvhejin.cn/categories/Go/"/>
+    
+    <category term="桌面机器人" scheme="http://www.lvhejin.cn/categories/Go/%E6%A1%8C%E9%9D%A2%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
+    
+    
+    <category term="机器人" scheme="http://www.lvhejin.cn/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Go语言：模拟鼠标操作（go-vgo/robotgo）</title>
+    <link href="http://www.lvhejin.cn/2023/12/05/Go/%E6%A1%8C%E9%9D%A2%E6%9C%BA%E5%99%A8%E4%BA%BA/Go%E8%AF%AD%E8%A8%80%E6%A8%A1%E6%8B%9F%E9%BC%A0%E6%A0%87%E6%93%8D%E4%BD%9C/index.html"/>
+    <id>http://www.lvhejin.cn/2023/12/05/Go/%E6%A1%8C%E9%9D%A2%E6%9C%BA%E5%99%A8%E4%BA%BA/Go%E8%AF%AD%E8%A8%80%E6%A8%A1%E6%8B%9F%E9%BC%A0%E6%A0%87%E6%93%8D%E4%BD%9C/index.html</id>
+    <published>2023-12-05T18:25:23.000Z</published>
+    <updated>2024-01-05T17:32:17.619Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;李大钊：我们要八小时工作！八小时睡觉！另外的八小时留给自己！&lt;/p&gt;
+&lt;h2 id=&quot;▌前置安装：&quot;&gt;&lt;a href=&quot;#▌前置安装：&quot; class=&quot;headerlink&quot; title=&quot;▌前置安装：&quot;&gt;&lt;/a&gt;▌前置安装：&lt;/h2&gt;&lt;figure class=&quot;high</summary>
+      
+    
+    
+    
+    <category term="Go" scheme="http://www.lvhejin.cn/categories/Go/"/>
+    
+    <category term="桌面机器人" scheme="http://www.lvhejin.cn/categories/Go/%E6%A1%8C%E9%9D%A2%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
+    
+    
+    <category term="机器人" scheme="http://www.lvhejin.cn/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Golang使用正则表达式</title>
+    <link href="http://www.lvhejin.cn/2023/12/05/Go/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Golang%E4%BD%BF%E7%94%A8%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/index.html"/>
+    <id>http://www.lvhejin.cn/2023/12/05/Go/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Golang%E4%BD%BF%E7%94%A8%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/index.html</id>
+    <published>2023-12-05T14:21:04.000Z</published>
+    <updated>2024-01-05T17:32:17.619Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Go语言：检验身份证（包含15、18位身份证）&quot;&gt;&lt;a href=&quot;#Go语言：检验身份证（包含15、18位身份证）&quot; class=&quot;headerlink&quot; title=&quot;Go语言：检验身份证（包含15、18位身份证）&quot;&gt;&lt;/a&gt;Go语言：检验身份证（包含15、1</summary>
+      
+    
+    
+    
+    <category term="Go" scheme="http://www.lvhejin.cn/categories/Go/"/>
+    
+    <category term="学习笔记" scheme="http://www.lvhejin.cn/categories/Go/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="正则表达式" scheme="http://www.lvhejin.cn/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Golang怎么调试</title>
+    <link href="http://www.lvhejin.cn/2023/11/18/Go/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Golang%E6%80%8E%E4%B9%88%E8%B0%83%E8%AF%95/index.html"/>
+    <id>http://www.lvhejin.cn/2023/11/18/Go/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Golang%E6%80%8E%E4%B9%88%E8%B0%83%E8%AF%95/index.html</id>
+    <published>2023-11-18T00:55:44.000Z</published>
+    <updated>2024-01-05T17:32:17.619Z</updated>
+    
+    
+    <summary type="html">Golang怎么调试，解决调试时报错问题</summary>
+    
+    
+    
+    <category term="Go" scheme="http://www.lvhejin.cn/categories/Go/"/>
+    
+    <category term="学习笔记" scheme="http://www.lvhejin.cn/categories/Go/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="常见问题" scheme="http://www.lvhejin.cn/tags/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PHP递归统计目录下所有子目录文件大小的函数</title>
+    <link href="http://www.lvhejin.cn/2023/11/10/PHP/PHP%E9%80%92%E5%BD%92%E7%BB%9F%E8%AE%A1%E7%9B%AE%E5%BD%95%E4%B8%8B%E6%89%80%E6%9C%89%E5%AD%90%E7%9B%AE%E5%BD%95%E6%96%87%E4%BB%B6%E5%A4%A7%E5%B0%8F%E7%9A%84%E5%87%BD%E6%95%B0/index.html"/>
+    <id>http://www.lvhejin.cn/2023/11/10/PHP/PHP%E9%80%92%E5%BD%92%E7%BB%9F%E8%AE%A1%E7%9B%AE%E5%BD%95%E4%B8%8B%E6%89%80%E6%9C%89%E5%AD%90%E7%9B%AE%E5%BD%95%E6%96%87%E4%BB%B6%E5%A4%A7%E5%B0%8F%E7%9A%84%E5%87%BD%E6%95%B0/index.html</id>
+    <published>2023-11-10T23:18:02.000Z</published>
+    <updated>2024-01-05T17:32:17.643Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;figure class=&quot;highlight php&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;</summary>
+      
+    
+    
+    
+    <category term="PHP" scheme="http://www.lvhejin.cn/categories/PHP/"/>
+    
+    
+    <category term="实例代码" scheme="http://www.lvhejin.cn/tags/%E5%AE%9E%E4%BE%8B%E4%BB%A3%E7%A0%81/"/>
+    
+    <category term="统计目录大小" scheme="http://www.lvhejin.cn/tags/%E7%BB%9F%E8%AE%A1%E7%9B%AE%E5%BD%95%E5%A4%A7%E5%B0%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>短短七言，把人生说透了！（精辟）</title>
+    <link href="http://www.lvhejin.cn/2023/06/13/%E6%95%99%E8%82%B2/%E4%BA%BA%E7%94%9F%E6%84%9F%E6%82%9F/%E7%9F%AD%E7%9F%AD%E4%B8%83%E8%A8%80%EF%BC%8C%E6%8A%8A%E4%BA%BA%E7%94%9F%E8%AF%B4%E9%80%8F%E4%BA%86%EF%BC%81%EF%BC%88%E7%B2%BE%E8%BE%9F%EF%BC%89/index.html"/>
+    <id>http://www.lvhejin.cn/2023/06/13/%E6%95%99%E8%82%B2/%E4%BA%BA%E7%94%9F%E6%84%9F%E6%82%9F/%E7%9F%AD%E7%9F%AD%E4%B8%83%E8%A8%80%EF%BC%8C%E6%8A%8A%E4%BA%BA%E7%94%9F%E8%AF%B4%E9%80%8F%E4%BA%86%EF%BC%81%EF%BC%88%E7%B2%BE%E8%BE%9F%EF%BC%89/index.html</id>
+    <published>2023-06-13T18:47:35.000Z</published>
+    <updated>2024-01-05T17:32:17.651Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;img src=&quot;/2023/06/13/%E6%95%99%E8%82%B2/%E4%BA%BA%E7%94%9F%E6%84%9F%E6%82%9F/%E7%9F%AD%E7%9F%AD%E4%B8%83%E8%A8%80%EF%BC%8C%E6%8A%8A%E4%BA%B</summary>
+      
+    
+    
+    
+    <category term="教育" scheme="http://www.lvhejin.cn/categories/%E6%95%99%E8%82%B2/"/>
+    
+    <category term="人生感悟" scheme="http://www.lvhejin.cn/categories/%E6%95%99%E8%82%B2/%E4%BA%BA%E7%94%9F%E6%84%9F%E6%82%9F/"/>
+    
+    
+    <category term="人生感悟" scheme="http://www.lvhejin.cn/tags/%E4%BA%BA%E7%94%9F%E6%84%9F%E6%82%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>解决运行Hexo报错hexo：无法加载文件hexo.ps1，因为在此系统上禁止运行脚本</title>
+    <link href="http://www.lvhejin.cn/2023/06/01/Hexo/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/%E5%9F%BA%E8%A7%A3%E5%86%B3%E8%BF%90%E8%A1%8CHexo%E6%8A%A5%E9%94%99hexo%EF%BC%9A%E6%97%A0%E6%B3%95%E5%8A%A0%E8%BD%BD%E6%96%87%E4%BB%B6ps1%EF%BC%8C%E5%9B%A0%E4%B8%BA%E5%9C%A8%E6%AD%A4%E7%B3%BB%E7%BB%9F%E4%B8%8A%E7%A6%81%E6%AD%A2%E8%BF%90%E8%A1%8C%E8%84%9A%E6%9C%AC/index.html"/>
+    <id>http://www.lvhejin.cn/2023/06/01/Hexo/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/%E5%9F%BA%E8%A7%A3%E5%86%B3%E8%BF%90%E8%A1%8CHexo%E6%8A%A5%E9%94%99hexo%EF%BC%9A%E6%97%A0%E6%B3%95%E5%8A%A0%E8%BD%BD%E6%96%87%E4%BB%B6ps1%EF%BC%8C%E5%9B%A0%E4%B8%BA%E5%9C%A8%E6%AD%A4%E7%B3%BB%E7%BB%9F%E4%B8%8A%E7%A6%81%E6%AD%A2%E8%BF%90%E8%A1%8C%E8%84%9A%E6%9C%AC/index.html</id>
+    <published>2023-06-01T22:57:01.000Z</published>
+    <updated>2024-01-05T17:32:17.619Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;无法加载文件 D:\node\node-v12.13.1-win-x64\node-v12.13.1-win-x64\hexo.ps1，因为在此系统上禁止 运行脚本。有关详细信息，请参阅 https:/go.microsoft.com/fwlink/?LinkID=1351</summary>
+      
+    
+    
+    
+    <category term="Hexo" scheme="http://www.lvhejin.cn/categories/Hexo/"/>
+    
+    <category term="常见问题" scheme="http://www.lvhejin.cn/categories/Hexo/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
+    
+    
+    <category term="常见问题" scheme="http://www.lvhejin.cn/tags/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
+    
+    <category term="Hexo" scheme="http://www.lvhejin.cn/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>互联网公司晋升必备的高级词汇</title>
+    <link href="http://www.lvhejin.cn/2023/06/01/%E4%BA%92%E8%81%94%E7%BD%91/%E5%9F%BA%E6%9C%AC%E5%8A%9F/%E4%BA%92%E8%81%94%E7%BD%91%E5%85%AC%E5%8F%B8%E6%99%8B%E5%8D%87%E5%BF%85%E5%A4%87%E7%9A%84%E9%AB%98%E7%BA%A7%E8%AF%8D%E6%B1%87/index.html"/>
+    <id>http://www.lvhejin.cn/2023/06/01/%E4%BA%92%E8%81%94%E7%BD%91/%E5%9F%BA%E6%9C%AC%E5%8A%9F/%E4%BA%92%E8%81%94%E7%BD%91%E5%85%AC%E5%8F%B8%E6%99%8B%E5%8D%87%E5%BF%85%E5%A4%87%E7%9A%84%E9%AB%98%E7%BA%A7%E8%AF%8D%E6%B1%87/index.html</id>
+    <published>2023-06-01T19:24:49.000Z</published>
+    <updated>2024-01-05T17:32:17.651Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;近日，张一鸣讽刺“互联网八股文”，引起网友们热议：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/2023/06/01/%E4%BA%92%E8%81%94%E7%BD%91/%E5%9F%BA%E6%9C%AC%E5%8A%9F/%E4%BA%92%E8%81%94%E7%BD%9</summary>
+      
+    
+    
+    
+    <category term="互联网" scheme="http://www.lvhejin.cn/categories/%E4%BA%92%E8%81%94%E7%BD%91/"/>
+    
+    <category term="基本功" scheme="http://www.lvhejin.cn/categories/%E4%BA%92%E8%81%94%E7%BD%91/%E5%9F%BA%E6%9C%AC%E5%8A%9F/"/>
+    
+    
+    <category term="开心一刻" scheme="http://www.lvhejin.cn/tags/%E5%BC%80%E5%BF%83%E4%B8%80%E5%88%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>体验而已</title>
+    <link href="http://www.lvhejin.cn/2023/06/01/%E6%95%99%E8%82%B2/%E4%BA%BA%E7%94%9F%E6%84%9F%E6%82%9F/%E4%BD%93%E9%AA%8C%E8%80%8C%E5%B7%B2/index.html"/>
+    <id>http://www.lvhejin.cn/2023/06/01/%E6%95%99%E8%82%B2/%E4%BA%BA%E7%94%9F%E6%84%9F%E6%82%9F/%E4%BD%93%E9%AA%8C%E8%80%8C%E5%B7%B2/index.html</id>
+    <published>2023-06-01T19:15:30.000Z</published>
+    <updated>2024-01-05T17:32:17.651Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;今晚刷抖音，一则视频告诉我，人在遇到坎坷的时候需要念一句咒语，叫做“体验而已”&lt;/p&gt;
+&lt;p&gt;你成功了（体验而已）你失败了（体验而已）&lt;/p&gt;
+&lt;p&gt;你结婚了（体验而已）你离婚了（体验而已）&lt;/p&gt;
+&lt;p&gt;你再婚了（体验而已）你又离了（体验而已）&lt;/p&gt;
+&lt;p&gt;是不是这样想</summary>
+      
+    
+    
+    
+    <category term="教育" scheme="http://www.lvhejin.cn/categories/%E6%95%99%E8%82%B2/"/>
+    
+    <category term="人生感悟" scheme="http://www.lvhejin.cn/categories/%E6%95%99%E8%82%B2/%E4%BA%BA%E7%94%9F%E6%84%9F%E6%82%9F/"/>
+    
+    
+    <category term="人生感悟" scheme="http://www.lvhejin.cn/tags/%E4%BA%BA%E7%94%9F%E6%84%9F%E6%82%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Visual Studio Code 快捷键大全（最全）</title>
+    <link href="http://www.lvhejin.cn/2023/03/24/VsCode/VisualStudioCode%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8%EF%BC%88%E6%9C%80%E5%85%A8%EF%BC%89/index.html"/>
+    <id>http://www.lvhejin.cn/2023/03/24/VsCode/VisualStudioCode%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8%EF%BC%88%E6%9C%80%E5%85%A8%EF%BC%89/index.html</id>
+    <published>2023-03-24T19:15:46.000Z</published>
+    <updated>2024-01-05T17:32:17.647Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;!-- 相对地址、相对链接、内部链接、站内链接 --&gt; 
+&lt;a href=&quot;/2022/10/10/VsCode/%E4%BD%BF%E7%94%A8vsCode%E9%85%8D%E7%BD%AEGo%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/i</summary>
+      
+    
+    
+    
+    <category term="VsCode" scheme="http://www.lvhejin.cn/categories/VsCode/"/>
+    
+    
+    <category term="VsCode" scheme="http://www.lvhejin.cn/tags/VsCode/"/>
+    
+    <category term="快捷键" scheme="http://www.lvhejin.cn/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>go环境配置</title>
+    <link href="http://www.lvhejin.cn/2023/03/24/Go/go%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/index.html"/>
+    <id>http://www.lvhejin.cn/2023/03/24/Go/go%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/index.html</id>
+    <published>2023-03-24T00:32:31.000Z</published>
+    <updated>2024-01-05T17:32:17.619Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;go环境配置GO111MODULE出现go-unknown-environment-setting-GO111MODULE-xxx的解决办法&quot;&gt;&lt;a href=&quot;#go环境配置GO111MODULE出现go-unknown-environment-setting-</summary>
+      
+    
+    
+    
+    <category term="Go" scheme="http://www.lvhejin.cn/categories/Go/"/>
+    
+    <category term="go环境配置" scheme="http://www.lvhejin.cn/categories/Go/go%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+    <category term="GO" scheme="http://www.lvhejin.cn/tags/GO/"/>
+    
+    <category term="go环境配置" scheme="http://www.lvhejin.cn/tags/go%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    <category term="常见问题" scheme="http://www.lvhejin.cn/tags/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo配置sitemap以及设置keywords</title>
+    <link href="http://www.lvhejin.cn/2023/03/09/Hexo/Hexo%E9%85%8D%E7%BD%AEsitemap%E4%BB%A5%E5%8F%8A%E8%AE%BE%E7%BD%AEkeywords/index.html"/>
+    <id>http://www.lvhejin.cn/2023/03/09/Hexo/Hexo%E9%85%8D%E7%BD%AEsitemap%E4%BB%A5%E5%8F%8A%E8%AE%BE%E7%BD%AEkeywords/index.html</id>
+    <published>2023-03-09T02:21:26.000Z</published>
+    <updated>2024-01-05T17:32:17.619Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;本文主要是对hexo搭建的博客进行简单的&lt;code&gt;SEO&lt;/code&gt;，比如给每篇文章加上&lt;code&gt;keywords&lt;/code&gt;，以及生成&lt;code&gt;sitemap.xml&lt;/code&gt;文件，方便我们提交到各大搜索引擎。&lt;/p&gt;
+&lt;h2 id=&quot;sitemap&quot;&gt;&lt;a</summary>
+      
+    
+    
+    
+    <category term="建站" scheme="http://www.lvhejin.cn/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    <category term="Hexo使用攻略" scheme="http://www.lvhejin.cn/categories/%E5%BB%BA%E7%AB%99/Hexo%E4%BD%BF%E7%94%A8%E6%94%BB%E7%95%A5/"/>
+    
+    <category term="Github" scheme="http://www.lvhejin.cn/categories/%E5%BB%BA%E7%AB%99/Hexo%E4%BD%BF%E7%94%A8%E6%94%BB%E7%95%A5/Github/"/>
+    
+    
+    <category term="SEO" scheme="http://www.lvhejin.cn/tags/SEO/"/>
+    
+    <category term="keywords" scheme="http://www.lvhejin.cn/tags/keywords/"/>
+    
+    <category term="sitemap" scheme="http://www.lvhejin.cn/tags/sitemap/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>3500个常用汉字（注音版）</title>
+    <link href="http://www.lvhejin.cn/2022/12/15/%E6%95%99%E8%82%B2/%E8%AF%AD%E6%96%87/3500%E4%B8%AA%E5%B8%B8%E7%94%A8%E6%B1%89%E5%AD%97%EF%BC%88%E6%B3%A8%E9%9F%B3%E7%89%88%EF%BC%89/index.html"/>
+    <id>http://www.lvhejin.cn/2022/12/15/%E6%95%99%E8%82%B2/%E8%AF%AD%E6%96%87/3500%E4%B8%AA%E5%B8%B8%E7%94%A8%E6%B1%89%E5%AD%97%EF%BC%88%E6%B3%A8%E9%9F%B3%E7%89%88%EF%BC%89/index.html</id>
+    <published>2022-12-15T17:14:32.000Z</published>
+    <updated>2024-01-05T17:32:17.651Z</updated>
+    
+    
+    <summary type="html">3500个常用汉字</summary>
+    
+    
+    
+    <category term="教育" scheme="http://www.lvhejin.cn/categories/%E6%95%99%E8%82%B2/"/>
+    
+    <category term="语文" scheme="http://www.lvhejin.cn/categories/%E6%95%99%E8%82%B2/%E8%AF%AD%E6%96%87/"/>
+    
+    
+    <category term="儿童识字" scheme="http://www.lvhejin.cn/tags/%E5%84%BF%E7%AB%A5%E8%AF%86%E5%AD%97/"/>
+    
+    <category term="常用汉字" scheme="http://www.lvhejin.cn/tags/%E5%B8%B8%E7%94%A8%E6%B1%89%E5%AD%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Go-import导入包详解</title>
+    <link href="http://www.lvhejin.cn/2022/12/12/Go/Go-import%E5%AF%BC%E5%85%A5%E5%8C%85%E8%AF%A6%E8%A7%A3/index.html"/>
+    <id>http://www.lvhejin.cn/2022/12/12/Go/Go-import%E5%AF%BC%E5%85%A5%E5%8C%85%E8%AF%A6%E8%A7%A3/index.html</id>
+    <published>2022-12-12T21:10:22.000Z</published>
+    <updated>2024-01-05T17:32:17.615Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;文章目录&quot;&gt;&lt;a href=&quot;#文章目录&quot; class=&quot;headerlink&quot; title=&quot;文章目录&quot;&gt;&lt;/a&gt;文章目录&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#1-%E5%8D%95%E8%A1%8C%E5%AF%BC%E5%85%A5&quot;&gt;1. 单行导</summary>
+      
+    
+    
+    
+    <category term="Go" scheme="http://www.lvhejin.cn/categories/Go/"/>
+    
+    
+    <category term="import" scheme="http://www.lvhejin.cn/tags/import/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Go语言MySQL时区问题</title>
+    <link href="http://www.lvhejin.cn/2022/12/12/Go/Go%E8%AF%AD%E8%A8%80MySQL%E6%97%B6%E5%8C%BA%E9%97%AE%E9%A2%98/index.html"/>
+    <id>http://www.lvhejin.cn/2022/12/12/Go/Go%E8%AF%AD%E8%A8%80MySQL%E6%97%B6%E5%8C%BA%E9%97%AE%E9%A2%98/index.html</id>
+    <published>2022-12-12T20:55:29.000Z</published>
+    <updated>2024-01-05T17:32:17.619Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;原文见：&lt;a href=&quot;https://link.zhihu.com/?target=https://jiajunhuang.com/articles/2019_11_14-golang_mysql_timezone.md.html&quot;&gt;Go语言MySQL时区问题 - Ji</summary>
+      
+    
+    
+    
+    <category term="Go" scheme="http://www.lvhejin.cn/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="http://www.lvhejin.cn/tags/Go/"/>
+    
+    <category term="MySQL" scheme="http://www.lvhejin.cn/tags/MySQL/"/>
+    
+    <category term="开发异常" scheme="http://www.lvhejin.cn/tags/%E5%BC%80%E5%8F%91%E5%BC%82%E5%B8%B8/"/>
+    
+  </entry>
+  
+</feed>

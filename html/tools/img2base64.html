@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+    <title>图片转Base64编码 - 开发工具箱</title>
+    <meta name="keywords" content="图片base64编码,图片转Base64编码,图片在线转换Base编码,base64编码转图片,图片转base64编码" />
+    <meta name="description" content="图片在线转换Base64编码, 支持 GIF、PNG、JPG、BMP、ICO 等多种格式" />
+    <link rel="stylesheet" href="//cdn.box3.cn/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//cdn.box3.cn/bootstrap-3.3.7-dist/css/blog.css" />
+    <link rel="icon" href="//cdn.box3.cn/icons/favicon.ico" mce_href="/icons/favicon.ico" type="image/x-icon">
+    <style>
+        .imgtobase64 {
+            display: inline-block;
+            border: 1px solid silver;
+            border-radius: 4px;
+            min-height: 300px;
+            margin: 0px;
+            padding: 8px;
+            vertical-align: middle;
+        }
+
+        .fileinput {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            right: 0;
+            top: 0;
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Header-begin-->
+    <div class="blog-masthead">
+        <div class="container">
+            <nav class="blog-nav"><a class="blog-nav-item" href="javascript:;">开发工具箱</a><a class="blog-nav-item"
+                href="/">站点首页</a><a class="blog-nav-item" href="/">工具导航</a><a class="blog-nav-item"
+                href="/">在线反馈</a></nav>
+        </div>
+    </div>
+    <!--Header-end-->
+
+    <div class="container">
+
+        <h3 class="box3-h3">图片转 Base64 编码 / Base64 编码转图片</h3>
+
+        <div class="imgtobase64" style="text-align: center;">
+            <button class="btn btn-info" type="button" id="upload">上传图片</button>
+            <input class="fileinput" type="file" id="fileinput" name="fileinput">
+        </div>
+
+        <textarea rows="3" class="imgtobase64" name="base64_result" id="base64_result"
+            placeholder="支持: gif、jpg、jpeg、bmp、png、ico、video 等多种格式。"></textarea>
+
+
+        <div class="btn-group" role="group" aria-label="..." data-toggle="buttons-radio"
+            style="display: block;margin: 10px 0px 10px 0px; text-align: center;white-space:inherit; height:34px">
+            <button type="button" class="btn btn-default box3-btn-clear">清空结果</button>
+            <button type="button" class="btn btn-info" id="base64toimgbtn">Base64转图片</button>
+            <button type="button" class="btn btn-default copy-txt-btn" data-clipboard-action="copy"
+                data-clipboard-target="#base64_result">复制结果</button>
+        </div>
+
+        <img src="" id="base64toimg" />
+    </div>
+
+    <!--Footer-begin-->
+    <nav class="blog-footer">
+        <p class="blog-footer-link">
+            <a href="/" target="_blank">关于开发工具箱</a>|<a href="/" target="_blank">扩展中心</a>|<a href="/"
+                target="_blank">贡献人员名单</a>|<a href="/" target="_blank">联系我们</a>|<a href="/links/" target="_blank">友情链接</a>|<a
+                href="/" target="_blank">使用帮助</a>
+        </p>
+        <div class="container">© Copyright 2005-2022 lvhejin.cn <a href="https://beian.miit.gov.cn"
+                target="_blank">京ICP备*******号</a></div>
+    </nav>
+    <!--Footer-end-->
+
+    <script src="//cdn.box3.cn/bootstrap-3.3.7-dist/js/jquery-1.9.1.min.js"></script>
+    <script src="//cdn.box3.cn/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="//cdn.box3.cn/js/developtoolbox/common.js"></script>
+    <script src="//cdn.box3.cn/js/developtoolbox/scrolltopcontrol.js"></script>
+    <script src="//cdn.box3.cn/js/developtoolbox/clipboard.min.js"></script>
+    <script>
+        $(function () { var t = null; window.FileReader && ((t = new FileReader).onload = function (t) { $("#base64_result").val(t.target.result), $("#base64toimg").attr("src", t.target.result).show() }), $("#base64toimgbtn").on("click", function () { var t = $("#base64_result").val(); t.length < 12 || -1 == t.indexOf("data:image") ? Tools.Alert("请先选择图片") : $("#base64toimg").attr("src", t).show() }), $("#fileinput").on("change", function () { t && ($("#base64_result").val("Loading ... ..."), t.readAsDataURL(document.querySelector("input[type=file]").files[0])) }), $("#upload").on("click", function () { null == t ? Tools.Alert("浏览器版本太低了") : $("#fileinput").click() }), $(".box3-btn-clear").on("click", function () { $("#base64_result").val(""), $("#base64toimg").removeAttr("src").hide() }); function e() { var t; isMobile() ? (t = $(".container").width() + 13, $(".imgtobase64").width(t).css("min-height", $(window).height() / 4).eq(1).css("margin-top", "10px")) : (t = $(".container").width() - 40, $(".imgtobase64").width(t / 2).css("min-height", 300).eq(1).css("margin-top", "0px")), $("#upload").css("margin-top", $(".imgtobase64").height() / 2 - 25 + "px") } Tools.Init(), e(), $(window).resize(function () { e() }) });
+    </script>
+
+</body>
+
+</html>
