@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+    <title>JWT在线解码 - 开发工具箱</title>
+    <meta name="keywords"
+        content="JWT,JWT decode,JWT在线转换,JWT在线解密,JSON Web Tokens,ID Token,JWT解密,JWT在线解析,JWT解析,JWT解码,JWT调试,JWT Debugger" />
+    <meta name="description"
+        content="JWT是目前最流行的跨域认证解决方案, 是一个开放式标准(RFC 7519), 用于在各方之间以JSON对象安全传输信息。JWT由三部分组成, 头部(HEADER)、载荷(PAYLOAD)、签证(SIGNATURE), 我们不记录令牌，所有验证和调试都在客户端进行。" />
+    <link rel="stylesheet" href="//cdn.box3.cn/codemirror-5.65.2/lib/codemirror.css" />
+    <link rel="stylesheet" href="//cdn.box3.cn/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//cdn.box3.cn/bootstrap-3.3.7-dist/css/blog.css" />
+    <link rel="icon" href="/favicon.png" mce_href="/favicon.png" type="image/x-icon">
+    <style>
+        .CodeMirror {
+            text-align: left;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        #con_right .CodeMirror {
+            border-radius: 0px
+        }
+
+        .decode_header {
+            border: 1px solid silver;
+            border-bottom: 0px;
+            padding: 0 10px;
+            line-height: 30px;
+        }
+
+        .dec .decode_bottom {
+            border: 1px solid silver;
+            border-radius: 0 0 4px 4px
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Header-begin-->
+    <div class="blog-masthead">
+        <div class="container">
+            <nav class="blog-nav"><a class="blog-nav-item" href="javascript:;">开发工具箱</a><a class="blog-nav-item"
+                    href="/">站点首页</a><a class="blog-nav-item" href="/">工具导航</a><a class="blog-nav-item"
+                    href="/">在线反馈</a></nav>
+        </div>
+    </div>
+    <!--Header-end-->
+
+    <div class="container">
+
+        <h3 class="box3-h3">JWT（JSON Web Tokens）在线解码</h3>
+
+        <div class="alert alert-warning" role="alert">
+            <strong>提示：</strong> JWT是目前流行的跨域认证解决方案, 遵循 <a href="//tools.ietf.org/html/rfc7519" target="_blank">RFC
+                7519</a> 标准, 请您妥善保管它。我们不记录令牌，所有验证和调试都在客户端进行。
+        </div>
+
+        <div style="width:100%;text-align:left" id="con_left">
+            <h4 style="color:#000;">编码 <small>请在以下文本框粘贴令牌</small></h4>
+            <textarea id="input" style="display:none;"></textarea>
+        </div>
+
+        <div style="width:100%;border-bottom: 1px solid silver;border-radius: 0 0 4px 0;" class="text-left"
+            id="con_right">
+            <div>
+                <h4 style="color:#000;">解码 <small>以下是解码的内容</small></h4>
+            </div>
+            <div class="decode_header" style="border-radius: 4px 4px 0 0;">HEADER</div>
+            <textarea id="output_header" style="display:none;height:100px"></textarea>
+            <div class="decode_header" style="border-top:0">PAYLOAD</div>
+            <textarea id="output_payload" style="display:none;"></textarea>
+            <div class="decode_header" style="border-top:0">STATUS</div>
+            <p class="decode_header text-success decode_bottom" id="status_none" style="color:#00b9f2;margin:0">... ...
+                ...</p>
+            <p class="decode_header text-success decode_bottom" id="status_ok" style="display:none;margin:0"><i
+                    class="icon-ok"></i> Decode Success</p>
+            <p class="decode_header text-error decode_bottom" id="status_err" style="display:none;margin:0"><i
+                    class="icon-remove"></i> <span></span></p>
+        </div>
+    </div>
+
+    <!--Footer-begin-->
+    <nav class="blog-footer">
+        <p class="blog-footer-link">
+            <a href="/" target="_blank">关于开发工具箱</a>|<a href="/" target="_blank">扩展中心</a>|<a href="/"
+                target="_blank">贡献人员名单</a>|<a href="/" target="_blank">联系我们</a>|<a href="/links/"
+                target="_blank">友情链接</a>|<a href="/" target="_blank">使用帮助</a>
+        </p>
+        <div class="container">© Copyright 2005-2022 lvhejin.cn <a href="https://beian.miit.gov.cn"
+                target="_blank">京ICP备*******号</a></div>
+    </nav>
+    <!--Footer-end-->
+
+    <script src="//cdn.box3.cn/bootstrap-3.3.7-dist/js/jquery-1.9.1.min.js"></script>
+    <script src="//cdn.box3.cn/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="//cdn.box3.cn/js/developtoolbox/common.js"></script>
+    <script src="//cdn.box3.cn/js/developtoolbox/scrolltopcontrol.js"></script>
+    <script src="//cdn.box3.cn/codemirror-5.65.2/lib/codemirror.js"></script>
+    <script src="//cdn.box3.cn/js/developtoolbox/scrolltopcontrol.js"></script>
+    <script src="//cdn.box3.cn/js/jwt/jwt-decode.min.js"></script>
+    <script src="//cdn.box3.cn/js/js-beautify.js"></script>
+
+    <script>
+        $(function () {
+            var output_playload;
+            var input;
+            input = CodeMirror.fromTextArea(document.getElementById("input"), {
+                styleActiveLine: false,
+                lineWrapping: true,
+                matchBrackets: true,
+                autofocus: true,
+                //viewportMargin: Infinity,
+            });
+            input.setOption("theme", "default");
+            input.on("change", function () {
+                var txt = input.getValue();
+                if (txt.length < 1) {
+                    output_header.setValue('');
+                    output_playload.setValue('');
+                    input.focus();
+                    return false;
+                }
+                var options = {
+                    indent_size: 2,
+                    unescape_strings: 1,
+                    indent_char: ' '
+                };
+                try {
+                    var decodedHeader = jwt_decode(txt, { header: true });
+                    output_header.setValue(js_beautify(JSON.stringify(decodedHeader), options))
+                    var decoded = jwt_decode(txt);
+                    $('#con_left .CodeMirror').css('background-color', '')
+                    output_playload.setValue(js_beautify(JSON.stringify(decoded), options))
+                    $('.CodeMirror').eq(1).find(".CodeMirror-code").css({ "color": "#fb015b" })
+                    $('.CodeMirror').eq(2).find(".CodeMirror-code").css({ "color": "#d63aff" })
+                    $('#status_ok').show()
+                    $('#status_none').hide()
+                    $('#status_err').hide()
+                } catch (error) {
+                    $('#con_left .CodeMirror').css('background-color', '#ffc0cb')
+                    output_playload.setValue(JSON.stringify({}))
+                    output_header.setValue(JSON.stringify({}))
+                    $('#status_ok').hide()
+                    $('#status_none').hide()
+                    $('#status_err').show().find('span').text(error.message)
+                }
+                resize()
+            })
+
+            var output_header = CodeMirror.fromTextArea(document.getElementById("output_header"), {
+                mode: "default",
+                styleActiveLine: false,
+                lineWrapping: true,
+                matchBrackets: true,
+                readOnly: true
+            });
+            output_header.setOption("theme", "default");
+
+            output_playload = CodeMirror.fromTextArea(document.getElementById("output_payload"), {
+                mode: "default",
+                styleActiveLine: false,
+                lineWrapping: true,
+                matchBrackets: true,
+                readOnly: true
+            });
+            output_playload.setOption("theme", "default");
+
+            var resize = function () {
+                var page_height = $(window).height();
+                var page_width = $('.container').width();
+                var current_width = (page_width / 2) - 1;
+
+                if (page_width < 768) {
+                    $(".container").find('small').css('display', 'none')
+                } else {
+                    $(".container").find('small').css('display', '')
+                }
+                if (isMobile()) {
+                    $('#con_left').css('width', '100%').css('float', '')
+                    $('#con_right').css('width', '100%').css('float', '').css('margin-left', '0px')
+                } else {
+                    $('#con_left').width(current_width).css('float', 'left')
+                    $('#con_right').width(current_width - 5).css('float', 'left').css('margin-left', '5px');
+                    if (input.doc.height > 200) {
+                        $('#con_left .CodeMirror').height('auto');
+                    } else {
+                        $('#con_left .CodeMirror').height(200);
+                    }
+                }
+            }
+
+            Tools.Init()
+            resize();
+            $(window).resize(function () {
+                resize();
+            });
+            $('#con_left .CodeMirror').css({ "min-height": 256 });
+            $('#con_right .CodeMirror').eq(0).css("height", 100);
+        })
+
+    </script>
+</body>
+
+</html>
+
+
+

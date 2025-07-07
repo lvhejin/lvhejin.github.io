@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+    <title>XML在线验证 - 开发工具箱</title>
+    <meta name="keywords" content="XML在线验证,XML验证,XML Validator" />
+    <meta name="description" content="XML一般指可扩展标记语言。XML文件格式是纯文本格式，在许多方面类似于HTML，但使用自定义标记来定义对象和每个对象中的数据。" />
+
+    <link rel="stylesheet" href="//cdn.box3.cn/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//cdn.box3.cn/bootstrap-3.3.7-dist/css/blog.css" />
+    <link rel="icon" href="/favicon.ico" mce_href="/favicon.png" type="image/x-icon">
+
+    <script src="//cdn.box3.cn/bootstrap-3.3.7-dist/js/jquery-1.9.1.min.js"></script>
+    <script src="//cdn.box3.cn/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="//cdn.box3.cn/js/developtoolbox/common.js"></script>
+    <script src="//cdn.box3.cn/js/developtoolbox/scrolltopcontrol.js"></script>
+    <script src="//cdn.box3.cn/assets/fast-xml-parser/fxvalidator.min.js"></script>
+</head>
+
+<body>
+
+    <!--Header-begin-->
+    <div class="blog-masthead">
+        <div class="container">
+            <nav class="blog-nav"><a class="blog-nav-item" href="javascript:;">开发工具箱</a><a class="blog-nav-item"
+                href="/">站点首页</a><a class="blog-nav-item" href="/">工具导航</a><a class="blog-nav-item"
+                href="/">在线反馈</a></nav>
+        </div>
+    </div>
+    <!--Header-end-->
+
+    <div class="container">
+        <h3 class="box3-h3">XML 在线验证</h3>
+        <form>
+            <textarea class="form-control" rows="6" placeholder="请输入需要验证的 XML 内容" name="inputchar" autofocus></textarea>
+
+            <p class="margintop10">
+                <button type="button" class="btn btn-primary" data-type="validator">XML 验证</button>
+                <button type="button" class="btn btn-primary" data-type="download">下载文件</button>
+                <button class="btn btn-default" data-type="clear" type="button">清空</button>
+            </p>
+        </form>
+    </div>
+
+    <!--Footer-begin-->
+    <nav class="blog-footer">
+        <p class="blog-footer-link">
+            <a href="/" target="_blank">关于开发工具箱</a>|<a href="/" target="_blank">扩展中心</a>|<a href="/"
+                target="_blank">贡献人员名单</a>|<a href="/" target="_blank">联系我们</a>|<a href="/links/" target="_blank">友情链接</a>|<a
+                href="/" target="_blank">使用帮助</a>
+        </p>
+        <div class="container">© Copyright 2005-2022 lvhejin.cn <a href="https://beian.miit.gov.cn"
+                target="_blank">京ICP备*******号</a></div>
+    </nav>
+    <!--Footer-end-->
+
+    <script>
+        $(function () {
+            $("textarea").height($(window).height() / 2)
+            $(window).resize(function () {
+                $("textarea").height($(window).height() / 2)
+            })
+            $('button').on('click', function () {
+                var txt = $.trim($('textarea[name=inputchar]').val());
+                var formType = $(this).attr('data-type')
+
+                if (typeof (txt) == "undefined" || txt.length < 1) {
+                    Tools.Alert("请输入内容")
+                    return
+                }
+                if (formType == "clear") {
+                    $('form')[0].reset()
+                    return false
+                } else if (formType == "validator") {
+                    result = XMLValidator.validate(txt, {
+                        // unpairedTags: ["extra"],
+                        allowBooleanAttributes: true
+                    });
+                    if (typeof (result) == "boolean") {
+                        Tools.SuccessTips("恭喜您，XML 内容验证通过。")
+                    } else {
+                        Tools.Alert(JSON.stringify(result.err), 10000)
+                        console.log(result)
+                    }
+                    return
+                } else if (formType == "download") {
+                    Tools.fileDown("box3_" + new Date().getTime() + ".xml", txt, "text/plain")
+                }
+            })
+
+            Tools.Init()
+        })
+    </script>
+</body>
+
+</html>
